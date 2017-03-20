@@ -1,8 +1,10 @@
+const findOrCreateUser = require('../../lib/findOrCreateUser');
+
 module.exports = {
     path: '/users/me',
     method: 'GET',
     handler(request, reply) {
-        reply(request.auth.credentials);
+        findOrCreateUser(request.auth.credentials, reply);
     },
     config: {
         auth: 'jwt',
