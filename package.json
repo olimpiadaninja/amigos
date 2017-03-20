@@ -21,14 +21,17 @@
         "hapi-auth-jwt2": "^7.1.3",
         "hapi-plus-routes": "^1.0.0",
         "hapi-router": "^3.5.0",
+        "hapi-sequelize": "^3.0.4",
         "hapi-swagger": "^7.2.0",
         "inert": "^4.0.2",
         "joi": "^10.1.0",
         "jsonwebtoken": "^7.1.9",
         "lodash": "^4.16.2",
-        "mrhorse": "^2.1.0",
         "mimelib": "^0.3.0",
+        "mrhorse": "^2.1.0",
+        "pg": "^6.1.4",
         "rotating-file-stream": "^1.0.5",
+        "sequelize": "^3.30.2",
         "vision": "^4.1.0"
     },
     "devDependencies": {
