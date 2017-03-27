@@ -2,7 +2,9 @@ const parsedDotEnv = require('dotenv').config().parsed;
 
 const env = parsedDotEnv || process.env;
 module.exports = {
+    examenId: env.EXAMEN_ID,
     authKey: env.AUTH_KEY,
+    jwtTtl: env.JWT_TTL,
     sqlConnection: {
         uri: env.DATABASE_URL || env.SQL_DATABASE_URL ||
         `${env.SQL_DIALECT}://${env.SQL_USER}:${env.SQL_PASSWORD}@${env.SQL_HOST}/${env.SQL_DATABASE}` || false,
