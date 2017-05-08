@@ -13,6 +13,7 @@
     },
     "dependencies": {
         "boom": "^4.2.0",
+        "discourse-sso": "^1.0.3",
         "dotenv": "^4.0.0",
         "emailjs": "^1.0.8",
         "good": "^7.0.2",
@@ -30,6 +31,8 @@
         "lodash": "^4.16.2",
         "mimelib": "^0.3.0",
         "mrhorse": "^2.1.0",
+        "nodemailer": "^4.0.1",
+        "nodemailer-sparkpost-transport": "^2.0.0",
         "pg": "^6.1.4",
         "rotating-file-stream": "^1.0.5",
         "sequelize": "^3.30.2",

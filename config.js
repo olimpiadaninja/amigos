@@ -33,5 +33,10 @@ module.exports = {
     smtp_reply_to: env.SMTP_REPLY_TO,
     jwtRedeemURL(token) {
         return `${env.JWT_REDEEM_URI}${token}`;
+    },
+    sso: {
+        discourse: {
+            secret: env.DISCOURSE_SSO_SECRET
+        }
     }
 };
