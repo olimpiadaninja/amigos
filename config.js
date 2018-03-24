@@ -7,7 +7,7 @@ module.exports = {
     jwtTtl: env.JWT_TTL,
     sqlConnection: {
         uri: env.DATABASE_URL || env.SQL_DATABASE_URL ||
-        `${env.SQL_DIALECT}://${env.SQL_USER}:${env.SQL_PASSWORD}@${env.SQL_HOST}/${env.SQL_DATABASE}` || false,
+            `${env.SQL_DIALECT}://${env.SQL_USER}:${env.SQL_PASSWORD}@${env.SQL_HOST}/${env.SQL_DATABASE}` || false,
         database: env.SQL_DATABASE,
         user: env.SQL_USER,
         password: env.SQL_PASSWORD,
@@ -38,5 +38,6 @@ module.exports = {
         discourse: {
             secret: env.DISCOURSE_SSO_SECRET
         }
-    }
+    },
+    omni_users: env.OMNI_USERS.split(';')
 };
